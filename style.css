@@ -1,20 +1,24 @@
+
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
 }
+
 header {
-    background-color: #ffcc00;
+    background-color: #8d0fa7;
     padding: 20px;
     text-align: center;
 }
 
 header h1 {
-    font-size: 24px;
-    color: #333;
+    font-size: 48px;
+    font-style: poppins;
+    color: #fffefe;
 }
 
 p {
@@ -49,42 +53,34 @@ nav a {
     font-size: 18px;
 }
 
-main {
-    padding: 20px;
+section
+{
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url("1.jpg");
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
+section h2
+{
+    font-size: 10vw;
+    color: #ffffff;
+    background: #2200ff;
+    padding: 10px 20px;
+    mix-blend-mode:color-burn;
 
-.pokemon-card {
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    max-width: 300px;
-}
 
-.pokemon-card img {
-    max-width: 100%;
-    height: auto;
-}
-
-.pokemon-card h2 {
-    font-size: 20px;
-    margin-top: 10px;
-    color: #333;
-}
-
-.pokemon-card p {
-    font-size: 16px;
-    color: #666;
 }
 
 footer {
-    background-color: #161010;
-    color: rgb(255, 255, 255);
+    background-color: #333;
+    color: white;
     text-align: center;
     padding: 10px;
     font-size: 14px;
 }
+
