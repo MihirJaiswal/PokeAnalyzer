@@ -86,6 +86,16 @@ main {
     font-weight: bold;
     border-radius: 5px;
     margin-top: 10px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.game-card a:hover {
+    transform: translate(-5px);
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.2);
+}
+.game-card:hover{
+    transform: scale(1.08);
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.2);
 }
 
 footer {
