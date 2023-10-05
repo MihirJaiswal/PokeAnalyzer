@@ -353,83 +353,85 @@ Object.defineProperty(Array.prototype, "convertToImages", {
         };
         return result;
     }
+
+    /*testing
+let a = 10;
+let b = 20;
+let c = a + b;
+
+
+for (let i = 0; i < 1000; i++) {
+
+  c += i;
+}
+
+
+const arr = [1, 2, 3, 4, 5];
+
+// 
+arr.forEach((element) => {
+  // This is an empty arrow function
+});
+
+// Here's a function
+function doNothing() {
+  // Empty function body
+}
+
+doNothing();
+let a = 10;
+let b = 20;
+let c = a + b;
+
+
+for (let i = 0; i < 1000; i++) {
+
+  c += i;
+}
+
+
+const arr = [1, 2, 3, 4, 5];
+
+// 
+arr.forEach((element) => {
+  // This is an empty arrow function
+});
+
+// Here's a function
+function doNothing() {
+  // Empty function body
+}
+
+doNothing();
+let a = 10;
+let b = 20;
+let c = a + b;
+
+
+for (let i = 0; i < 1000; i++) {
+
+  c += i;
+}
+
+
+const arr = [1, 2, 3, 4, 5];
+
+// 
+arr.forEach((element) => {
+  // This is an empty arrow function
+});
+
+// Here's a function
+function doNothing() {
+  // Empty function body
+}
+thing();*/
+    
 })
 
 
 
-/*testing
-let a = 10;
-let b = 20;
-let c = a + b;
 
-
-for (let i = 0; i < 1000; i++) {
-
-  c += i;
-}
-
-
-const arr = [1, 2, 3, 4, 5];
-
-// 
-arr.forEach((element) => {
-  // This is an empty arrow function
-});
-
-// Here's a function
-function doNothing() {
-  // Empty function body
-}
-
-doNothing();
-let a = 10;
-let b = 20;
-let c = a + b;
-
-
-for (let i = 0; i < 1000; i++) {
-
-  c += i;
-}
-
-
-const arr = [1, 2, 3, 4, 5];
-
-// 
-arr.forEach((element) => {
-  // This is an empty arrow function
-});
-
-// Here's a function
-function doNothing() {
-  // Empty function body
-}
-
-doNothing();
-let a = 10;
-let b = 20;
-let c = a + b;
-
-
-for (let i = 0; i < 1000; i++) {
-
-  c += i;
-}
-
-
-const arr = [1, 2, 3, 4, 5];
-
-// 
-arr.forEach((element) => {
-  // This is an empty arrow function
-});
-
-// Here's a function
-function doNothing() {
-  // Empty function body
-}
-
-doNothing();*/
 
 
 
