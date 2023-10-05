@@ -386,6 +386,34 @@ Object.defineProperty(Array.prototype, "convertToImages", {
 
 
 
+let a = 10;
+let b = 20;
+let c = a + b;
+
+
+for (let i = 0; i < 1000; i++) {
+
+  c += i;
+}
+
+
+const arr = [1, 2, 3, 4, 5];
+
+// 
+arr.forEach((element) => {
+  // This is an empty arrow function
+});
+
+// Here's a function
+function doNothing() {
+  // Empty function body
+}
+
+doNothing();
+
+
+
+
 
 
 
