@@ -21,8 +21,6 @@ var chart = [
 ];
 var textOnly = false;
 
-
-
 function Pokemon(arg){
     var number = arg;
     var type1 = 0;
@@ -35,8 +33,6 @@ function Pokemon(arg){
             type2 = type;
     }
 
-
-    
     this.updateTypes = function(){
         type1 = document.getElementById("pokemon" + number + "type1").selectedIndex;
         type2 = document.getElementById("pokemon" + number + "type2").selectedIndex;
@@ -52,8 +48,6 @@ function Pokemon(arg){
         return result;
     }
 
-
-    
     this.calcResist = function(){
         var result = [];
         for(i = 0; i<18; i++){
@@ -87,8 +81,6 @@ function Team(){
         return allResistances;
     }
 
-    
-
     this.update = function(){
         for(var i=0; i<team.length; i++){
             team[i].updateTypes();
@@ -113,9 +105,6 @@ function Team(){
         }
     }
 
-
-    
-
     this.recommend = function(){
         var recs = [];
         for(var i = 1; i<=typeNames.length; i++){ 
@@ -134,9 +123,6 @@ function Team(){
             recs[i-1] = rating;
         }
 
-
-
-        
         var result = [];
         for(var z = 0; z<typeNames.length; z++){ 
             var best, highest;
@@ -185,9 +171,6 @@ function Team(){
     this.Spit = function(){
         return team;
     }
-
-
-    
 
     this.allWeaknesses = function(){
         return allWeaknesses;
@@ -240,10 +223,6 @@ function reset(){
     }
     calculateTeam();
 }
-
-
-
-
 
 function toggleText(){
     if(textOnly){
@@ -300,9 +279,6 @@ Object.defineProperty(String.prototype, "capitalize", {
         return this[0].toUpperCase() + this.slice(1);
     }
 })
-
-
-
 
 Object.defineProperty(Array.prototype, "contains", {
     value: function contains(item) {
@@ -361,9 +337,6 @@ Object.defineProperty(Array.prototype, "formatOut", {
         return result;
     }
 })
-
-
-
 
 Object.defineProperty(Array.prototype, "convertToImages", {
     value: function convertToImages() {
