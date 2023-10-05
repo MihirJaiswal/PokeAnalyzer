@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pokemon Weakness Calculator</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="main.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div id="header">
+    <div class="header-title">
+      <h1>MonsterPedia's Type Weakness Calculator</h1>
+    </div>
+  </div>
+  
+	<div id="main">
+		<table id="table"><tr><td><b class="heading">POKEMON TYPES</b></td><td><b class="heading">WEAKNESS</b></td><td><b class="heading">RESISTANCE</b></td></tr><tr><td>
+			<select id="pokemon1type1">
+				<option value="0">None</option>
+				<option value="1">Normal</option>
+				<option value="2">Fire</option>
+				<option value="3">Water</option>
+				<option value="4">Electric</option>
+				<option value="5">Grass</option>
+				<option value="6">Ice</option>
+				<option value="7">Fighting</option>
+				<option value="8">Poison</option>
+				<option value="9">Ground</option>
+				<option value="10">Flying</option>
+				<option value="11">Psychic</option>
+				<option value="12">Bug</option>
+				<option value="13">Rock</option>
+				<option value="14">Ghost</option>
+				<option value="15">Dragon</option>
+				<option value="16">Dark</option>
+				<option value="17">Steel</option>
+				<option value="18">Fairy</option>
+			</select>
+			<select id="pokemon1type2">
+				<option value="0">None</option>
+				<option value="1">Normal</option>
+				<option value="2">Fire</option>
+				<option value="3">Water</option>
+				<option value="4">Electric</option>
+				<option value="5">Grass</option>
+				<option value="6">Ice</option>
+				<option value="7">Fighting</option>
+				<option value="8">Poison</option>
+				<option value="9">Ground</option>
+				<option value="10">Flying</option>
+				<option value="11">Psychic</option>
+				<option value="12">Bug</option>
+				<option value="13">Rock</option>
+				<option value="14">Ghost</option>
+				<option value="15">Dragon</option>
+				<option value="16">Dark</option>
+				<option value="17">Steel</option>
+				<option value="18">Fairy</option>
+			</select>
+		</td><td></td><td></td></td></tr><tr><td>
+			<select id="pokemon2type1">
+				<option value="0">None</option>
+				<option value="1">Normal</option>
+				<option value="2">Fire</option>
+				<option value="3">Water</option>
+				<option value="4">Electric</option>
+				<option value="5">Grass</option>
+				<option value="6">Ice</option>
+				<option value="7">Fighting</option>
+				<option value="8">Poison</option>
+				<option value="9">Ground</option>
+				<option value="10">Flying</option>
+				<option value="11">Psychic</option>
+				<option value="12">Bug</option>
+				<option value="13">Rock</option>
+				<option value="14">Ghost</option>
+				<option value="15">Dragon</option>
+				<option value="16">Dark</option>
+				<option value="17">Steel</option>
+				<option value="18">Fairy</option>
+			</select>
+			<select id="pokemon2type2">
+				<option value="0">None</option>
+				<option value="1">Normal</option>
+				<option value="2">Fire</option>
+				<option value="3">Water</option>
+				<option value="4">Electric</option>
+				<option value="5">Grass</option>
+				<option value="6">Ice</option>
+				<option value="7">Fighting</option>
+				<option value="8">Poison</option>
+				<option value="9">Ground</option>
+				<option value="10">Flying</option>
+				<option value="11">Psychic</option>
+				<option value="12">Bug</option>
+				<option value="13">Rock</option>
+				<option value="14">Ghost</option>
+				<option value="15">Dragon</option>
+				<option value="16">Dark</option>
+				<option value="17">Steel</option>
+				<option value="18">Fairy</option>
+			</select>
+		</td><td></td><td></td></tr><tr><td>
+			<select id="pokemon3type1">
+				<option value="0">None</option>
+				<option value="1">Normal</option>
+				<option value="2">Fire</option>
+				<option value="3">Water</option>
+				<option value="4">Electric</option>
+				<option value="5">Grass</option>
+				<option value="6">Ice</option>
+				<option value="7">Fighting</option>
+				<option value="8">Poison</option>
+				<option value="9">Ground</option>
+				<option value="10">Flying</option>
+				<option value="11">Psychic</option>
+				<option value="12">Bug</option>
+				<option value="13">Rock</option>
+				<option value="14">Ghost</option>
+				<option value="15">Dragon</option>
+				<option value="16">Dark</option>
+				<option value="17">Steel</option>
+				<option value="18">Fairy</option>
+			</select>
+			<select id="pokemon3type2">
+				<option value="0">None</option>
+				<option value="1">Normal</option>
+				<option value="2">Fire</option>
+				<option value="3">Water</option>
+				<option value="4">Electric</option>
+				<option value="5">Grass</option>
+				<option value="6">Ice</option>
+				<option value="7">Fighting</option>
+				<option value="8">Poison</option>
+				<option value="9">Ground</option>
+				<option value="10">Flying</option>
+				<option value="11">Psychic</option>
+				<option value="12">Bug</option>
+				<option value="13">Rock</option>
+				<option value="14">Ghost</option>
+				<option value="15">Dragon</option>
+				<option value="16">Dark</option>
+				<option value="17">Steel</option>
+				<option value="18">Fairy</option>
+			</select>
+		</td><td></td><td></td></td></tr><tr><td>
+			<select id="pokemon4type1">
+				<option value="0">None</option>
+				<option value="1">Normal</option>
+				<option value="2">Fire</option>
+				<option value="3">Water</option>
+				<option value="4">Electric</option>
+				<option value="5">Grass</option>
+				<option value="6">Ice</option>
+				<option value="7">Fighting</option>
+				<option value="8">Poison</option>
+				<option value="9">Ground</option>
+				<option value="10">Flying</option>
+				<option value="11">Psychic</option>
+				<option value="12">Bug</option>
+				<option value="13">Rock</option>
+				<option value="14">Ghost</option>
+				<option value="15">Dragon</option>
+				<option value="16">Dark</option>
+				<option value="17">Steel</option>
+				<option value="18">Fairy</option>
+			</select>
+			<select id="pokemon4type2">
+				<option value="0">None</option>
+				<option value="1">Normal</option>
+				<option value="2">Fire</option>
+				<option value="3">Water</option>
+				<option value="4">Electric</option>
+				<option value="5">Grass</option>
+				<option value="6">Ice</option>
+				<option value="7">Fighting</option>
+				<option value="8">Poison</option>
+				<option value="9">Ground</option>
+				<option value="10">Flying</option>
+				<option value="11">Psychic</option>
+				<option value="12">Bug</option>
+				<option value="13">Rock</option>
+				<option value="14">Ghost</option>
+				<option value="15">Dragon</option>
+				<option value="16">Dark</option>
+				<option value="17">Steel</option>
+				<option value="18">Fairy</option>
+			</select>
+		</td><td></td><td></td></tr><tr><td>
+			<select id="pokemon5type1">
+				<option value="0">None</option>
+				<option value="1">Normal</option>
+				<option value="2">Fire</option>
+				<option value="3">Water</option>
+				<option value="4">Electric</option>
+				<option value="5">Grass</option>
+				<option value="6">Ice</option>
+				<option value="7">Fighting</option>
+				<option value="8">Poison</option>
+				<option value="9">Ground</option>
+				<option value="10">Flying</option>
+				<option value="11">Psychic</option>
+				<option value="12">Bug</option>
+				<option value="13">Rock</option>
+				<option value="14">Ghost</option>
+				<option value="15">Dragon</option>
+				<option value="16">Dark</option>
+				<option value="17">Steel</option>
+				<option value="18">Fairy</option>
+			</select>
+			<select id="pokemon5type2">
+				<option value="0">None</option>
+				<option value="1">Normal</option>
+				<option value="2">Fire</option>
+				<option value="3">Water</option>
+				<option value="4">Electric</option>
+				<option value="5">Grass</option>
+				<option value="6">Ice</option>
+				<option value="7">Fighting</option>
+				<option value="8">Poison</option>
+				<option value="9">Ground</option>
+				<option value="10">Flying</option>
+				<option value="11">Psychic</option>
+				<option value="12">Bug</option>
+				<option value="13">Rock</option>
+				<option value="14">Ghost</option>
+				<option value="15">Dragon</option>
+				<option value="16">Dark</option>
+				<option value="17">Steel</option>
+				<option value="18">Fairy</option>
+			</select>
+		</td><td></td><td></td></td></tr><tr><td>
+			<select id="pokemon6type1">
+				<option value="0">None</option>
+				<option value="1">Normal</option>
+				<option value="2">Fire</option>
+				<option value="3">Water</option>
+				<option value="4">Electric</option>
+				<option value="5">Grass</option>
+				<option value="6">Ice</option>
+				<option value="7">Fighting</option>
+				<option value="8">Poison</option>
+				<option value="9">Ground</option>
+				<option value="10">Flying</option>
+				<option value="11">Psychic</option>
+				<option value="12">Bug</option>
+				<option value="13">Rock</option>
+				<option value="14">Ghost</option>
+				<option value="15">Dragon</option>
+				<option value="16">Dark</option>
+				<option value="17">Steel</option>
+				<option value="18">Fairy</option>
+			</select>
+			<select id="pokemon6type2">
+				<option value="0">None</option>
+				<option value="1">Normal</option>
+				<option value="2">Fire</option>
+				<option value="3">Water</option>
+				<option value="4">Electric</option>
+				<option value="5">Grass</option>
+				<option value="6">Ice</option>
+				<option value="7">Fighting</option>
+				<option value="8">Poison</option>
+				<option value="9">Ground</option>
+				<option value="10">Flying</option>
+				<option value="11">Psychic</option>
+				<option value="12">Bug</option>
+				<option value="13">Rock</option>
+				<option value="14">Ghost</option>
+				<option value="15">Dragon</option>
+				<option value="16">Dark</option>
+				<option value="17">Steel</option>
+				<option value="18">Fairy</option>
+			</select>
+		</td><td></td><td></td></tr>
+		<tr>
+			<td><b class="heading">TEAM OVERVIEW</b></td>
+			<td id="weaknesses"></td>
+			<td id="resistances"></td>
+			</tr>
+		</table>
+	<div class="btn">
+			<button onclick="calculateTeam()"><b class="heading1">CALCULATE</b></button>
+			<button onclick="reset()"><b class="heading1">RESET</b></button>
+		</div>
+	</div>
+	<div id="bottomBar">
+		<p id="unresisted" class="heading1">
+			Not Resisted: 
+			<img src="images/normal.jpg" alt="Normal">
+			<img src="images/fire.jpg" alt="Fire">
+			<img src="images/water.jpg" alt="Water">
+			<img src="images/electric.jpg" alt="Electric">
+			<img src="images/grass.jpg" alt="Grass">
+			<img src="images/ice.jpg" alt="Ice">
+			<img src="images/fighting.jpg" alt="Fighting">
+			<img src="images/poison.jpg" alt="Poison">
+			<img src="images/ground.jpg" alt="Ground">
+			<img src="images/flying.jpg" alt="Flying">
+			<img src="images/psychic.jpg" alt="Psychic">
+			<img src="images/bug.jpg" alt="Bug">
+			<img src="images/rock.jpg" alt="Rock">
+			<img src="images/ghost.jpg" alt="Ghost">
+			<img src="images/dragon.jpg" alt="Dragon">
+			<img src="images/dark.jpg" alt="Dark">
+			<img src="images/steel.jpg" alt="Steel">
+			<img src="images/fairy.jpg" alt="Fairy">
+		</p>
+		<br>
+		<p id="recommended" class="heading1">
+			Proposed Additions: 
+			<img src="images/normal.jpg" alt="Normal"><img src="images/electric.jpg" alt="Electric"><img src="images/water.jpg" alt="Water"><img src="images/poison.jpg" alt="Poison"><img src="images/ghost.jpg" alt="Ghost"><img src="images/fairy.jpg" alt="Fairy"><img src="images/fire.jpg" alt="Fire"><!-- <img src="images/fighting.jpg" alt="Fighting"><img src="images/ground.jpg" alt="Ground"><img src="images/flying.jpg" alt="Flying"><img src="images/psychic.jpg" alt="Psychic"><img src="images/bug.jpg" alt="Bug"><img src="images/dragon.jpg" alt="Dragon"><img src="images/dark.jpg" alt="Dark"><img src="images/steel.jpg" alt="Steel"><img src="images/ice.jpg" alt="Ice"><img src="images/grass.jpg" alt="Grass"><img src="images/rock.jpg" alt="Rock">
+ -->		</p>
+		</div>
+    <div id="footer">
+      <div class="footer-content">
+          <div class="footer-logo">
+              <img src="images/logo.png" alt="Logo">
+          </div>
+          <div class="footer-logo1">
+            <img src="images/logo2.png" alt="Logo">
+        </div>
+        <div class="footer-logo">
+          <img src="images/logo3.png" alt="Logo">
+      </div>
+      </div>   
+      <div class="footer-text">
+          &copy; 2023 MonsterPedia. All rights reserved.
+      </div>
+  </div>
+</body>
+</html>
+
+
+
+

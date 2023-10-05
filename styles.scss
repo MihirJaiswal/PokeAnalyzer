@@ -1,0 +1,268 @@
+$color_1: #ecf0f1;
+$color_2: #fff;
+$font-family_1: 'Black Ops One';
+$font-family_2: 'black Ops One';
+$font-family_3: Arial, sans-serif;
+$background-color_1: #35495e;
+$background-color_2: #333;
+$background-color_3: #2980b9;
+$background-color_4: #3498db;
+
+@import "https://fonts.googleapis.com/css2?family=Black+Ops+One&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vollkorn:wght@500&display=swap";
+/* Footer Container */
+/* Footer Content */
+/* Footer Logo */
+/* Footer Links */
+/* Footer Social Icons */
+/* Footer Text */
+* {
+	font-family: $font-family_1;
+}
+html {
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: $background-color_1;
+	color: $color_1;
+	font-size: 1.4em;
+	font-family: $font-family_2;
+}
+#header {
+	background-color: $background-color_2;
+	color: $color_2;
+	padding: 20px;
+	text-align: center;
+}
+.header-title {
+	h1 {
+		font-size: 44px;
+		margin: 0;
+	}
+}
+#main {
+	background: url(images/cover.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 10px 20px 0;
+}
+table {
+	border-spacing: 5px;
+	tr {
+		&:nth-child(even) {
+			td {
+				background-color: $background-color_3;
+			}
+		}
+		&:nth-child(odd) {
+			td {
+				background-color: $background-color_4;
+			}
+		}
+	}
+}
+.heading {
+	font-size: 30px;
+	font-weight: 600;
+}
+td {
+	padding: 10px;
+	width: 300px;
+	height: 60px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+select {
+	border: 5px solid #2c3e50;
+	font-size: 14px;
+	background: #fff;
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 8px;
+}
+#grad {
+	width: 150px;
+	background: #e74c3c;
+}
+tr {
+	&:nth-child(even) {
+		#grad {
+			background: #d35400;
+		}
+	}
+	&:nth-child(odd) {
+		#grad {
+			background: #e74c3c;
+		}
+	}
+	&:last-child {
+		td {
+			height: 80px;
+		}
+	}
+}
+button {
+	margin: 10px;
+	border: 2px solid #e67e22;
+	border-radius: 10px;
+	font-family: $font-family_3;
+	font-size: 1em;
+	padding: 12px 20px;
+	width: 200px;
+	text-align: center;
+	background: #eaad1f;
+	color: $color_2;
+	cursor: pointer;
+	&:hover {
+		background: #e67e22;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+.btn {
+	margin-left: 250px;
+	font-family: $font-family_1;
+}
+p {
+	margin: 10px;
+	display: inline;
+}
+#bottomBar {
+	background-color: $background-color_2;
+	color: $color_2;
+	text-align: center;
+	padding: 20px;
+}
+#unresisted {
+	margin: 0 5px;
+	margin-bottom: 20px;
+}
+#recommended {
+	img {
+		margin: 0 5px;
+		margin-top: 20px;
+	}
+}
+.heading1 {
+	font-size: 26px;
+	font-weight: 600;
+}
+#footer {
+	background-color: $background-color_2;
+	color: $color_2;
+	padding: 20px 0;
+	text-align: center;
+}
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.footer-logo {
+	img {
+		max-width: 150px;
+		height: auto;
+	}
+}
+.footer-logo1 {
+	img {
+		max-width: 250px;
+		height: auto;
+	}
+}
+.footer-links {
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		li {
+			margin-bottom: 10px;
+			a {
+				text-decoration: none;
+				color: $color_2;
+				font-weight: bold;
+			}
+		}
+	}
+}
+.footer-social {
+	a {
+		display: inline-block;
+		margin-right: 10px;
+	}
+	img {
+		max-width: 30px;
+		height: auto;
+	}
+}
+.footer-text {
+	margin-top: 20px;
+	font-size: 14px;
+}
+@media screen and (max-width: 468px) {
+	body {
+		margin-left: -20px;
+	}
+	.header {
+		max-width: 250%;
+	}
+	.header-title {
+		h1 {
+			font-size: 3.5rem;
+			font-size: 24px;
+			margin: 0;
+		}
+	}
+	.heading {
+		font-size: 1.3rem;
+	}
+	#main {
+		max-width: fit-content;
+		background-size: 0%;
+	}
+	.btn {
+		margin-left: 0;
+		padding: 10px;
+	}
+	#unresisted {
+		margin: 0 2px;
+		margin-top: 10px;
+	}
+	#recommended {
+		img {
+			margin: 0 2px;
+			margin-top: 10px;
+		}
+	}
+	.heading1 {
+		font-size: 1.1rem;
+	}
+	.footer {
+		background-color: $background-color_2;
+		color: $color_2;
+		padding: 20px 0;
+		text-align: center;
+		height: auto;
+	}
+	.footer-logo {
+		img {
+			max-width: 100px;
+			height: auto;
+		}
+	}
+	.footer-logo1 {
+		img {
+			max-width: 100px;
+			height: auto;
+		}
+	}
+}
