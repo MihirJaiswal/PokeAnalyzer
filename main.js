@@ -1,63 +1,65 @@
 var typeNames = ['normal', 'fire', 'water', 'electric', 'grass', 'ice', 'fighting', 'poison', 'ground', 'flying', 'psychic', 'bug', 'rock', 'ghost', 'dragon', 'dark', 'steel', 'fairy'];
 var chart = [ 
-    [001, 001, 001, 001, 001, 001, 001, 001, 001, 001, 001, 001, 001, 001, 001, 001, 001, 001],
-    [001, 001, 001, 001, 001, 001, 002, 001, 001, 001, 001, 001, 001, 000, 001, 001, 001, 001],
-    [001, 0.5, 002, 001, 0.5, 0.5, 001, 001, 002, 001, 001, 0.5, 002, 001, 001, 001, 0.5, 0.5],
-    [001, 0.5, 0.5, 002, 002, 0.5, 001, 001, 001, 001, 001, 001, 001, 001, 001, 001, 0.5, 001],
-    [001, 001, 001, 0.5, 001, 001, 001, 001, 002, 0.5, 001, 001, 001, 001, 001, 001, 0.5, 001],
-    [001, 002, 0.5, 0.5, 0.5, 002, 001, 002, 0.5, 002, 001, 002, 001, 001, 001, 001, 001, 001],
-    [001, 002, 001, 001, 001, 0.5, 002, 001, 001, 001, 001, 001, 002, 001, 001, 001, 002, 001],
-    [001, 001, 001, 001, 001, 001, 001, 001, 001, 002, 002, 0.5, 0.5, 001, 001, 0.5, 001, 002],
-    [001, 001, 001, 001, 0.5, 001, 0.5, 0.5, 002, 001, 002, 0.5, 001, 001, 001, 001, 001, 0.5],
-    [001, 001, 002, 000, 002, 002, 001, 0.5, 001, 001, 001, 001, 0.5, 001, 001, 001, 001, 001],
-    [001, 001, 001, 002, 0.5, 002, 0.5, 001, 000, 001, 001, 0.5, 002, 001, 001, 001, 001, 001],
-    [001, 001, 001, 001, 001, 001, 0.5, 001, 001, 001, 0.5, 002, 001, 002, 001, 002, 001, 001],
-    [001, 002, 001, 001, 0.5, 001, 0.5, 001, 0.5, 002, 001, 001, 002, 001, 001, 001, 001, 001],
-    [0.5, 0.5, 002, 001, 002, 001, 002, 0.5, 002, 0.5, 001, 001, 001, 001, 001, 001, 002, 001],
-    [000, 001, 001, 001, 001, 001, 000, 0.5, 001, 001, 001, 0.5, 001, 002, 001, 002, 001, 001],
-    [001, 0.5, 0.5, 0.5, 0.5, 002, 001, 001, 001, 001, 001, 001, 001, 001, 002, 001, 001, 002],
-    [001, 001, 001, 001, 001, 001, 002, 001, 001, 001, 000, 002, 001, 0.5, 001, 0.5, 001, 002],
-    [0.5, 002, 001, 001, 0.5, 0.5, 002, 000, 002, 0.5, 0.5, 0.5, 0.5, 001, 0.5, 001, 0.5, 0.5],
-    [001, 001, 001, 001, 001, 001, 0.5, 002, 001, 001, 001, 0.5, 001, 001, 000, 0.5, 002, 001]
+    [001, 001, 001, 001, 001, 001, 001, 001, 001, 001, 001, 001, 001, 001, 001, 001, 001, 001], //None
+    [001, 001, 001, 001, 001, 001, 002, 001, 001, 001, 001, 001, 001, 000, 001, 001, 001, 001], //Normal
+    [001, 0.5, 002, 001, 0.5, 0.5, 001, 001, 002, 001, 001, 0.5, 002, 001, 001, 001, 0.5, 0.5], //Fire
+    [001, 0.5, 0.5, 002, 002, 0.5, 001, 001, 001, 001, 001, 001, 001, 001, 001, 001, 0.5, 001], //Water
+    [001, 001, 001, 0.5, 001, 001, 001, 001, 002, 0.5, 001, 001, 001, 001, 001, 001, 0.5, 001], //Electric
+    [001, 002, 0.5, 0.5, 0.5, 002, 001, 002, 0.5, 002, 001, 002, 001, 001, 001, 001, 001, 001], //Grass
+    [001, 002, 001, 001, 001, 0.5, 002, 001, 001, 001, 001, 001, 002, 001, 001, 001, 002, 001], //Ice
+    [001, 001, 001, 001, 001, 001, 001, 001, 001, 002, 002, 0.5, 0.5, 001, 001, 0.5, 001, 002], //Fighting
+    [001, 001, 001, 001, 0.5, 001, 0.5, 0.5, 002, 001, 002, 0.5, 001, 001, 001, 001, 001, 0.5], //Poison
+    [001, 001, 002, 000, 002, 002, 001, 0.5, 001, 001, 001, 001, 0.5, 001, 001, 001, 001, 001], //Ground
+    [001, 001, 001, 002, 0.5, 002, 0.5, 001, 000, 001, 001, 0.5, 002, 001, 001, 001, 001, 001], //Flying
+    [001, 001, 001, 001, 001, 001, 0.5, 001, 001, 001, 0.5, 002, 001, 002, 001, 002, 001, 001], //Psychic
+    [001, 002, 001, 001, 0.5, 001, 0.5, 001, 0.5, 002, 001, 001, 002, 001, 001, 001, 001, 001], //Bug
+    [0.5, 0.5, 002, 001, 002, 001, 002, 0.5, 002, 0.5, 001, 001, 001, 001, 001, 001, 002, 001], //Rock
+    [000, 001, 001, 001, 001, 001, 000, 0.5, 001, 001, 001, 0.5, 001, 002, 001, 002, 001, 001], //Ghost
+    [001, 0.5, 0.5, 0.5, 0.5, 002, 001, 001, 001, 001, 001, 001, 001, 001, 002, 001, 001, 002], //Dragon
+    [001, 001, 001, 001, 001, 001, 002, 001, 001, 001, 000, 002, 001, 0.5, 001, 0.5, 001, 002], //Dark
+    [0.5, 002, 001, 001, 0.5, 0.5, 002, 000, 002, 0.5, 0.5, 0.5, 0.5, 001, 0.5, 001, 0.5, 0.5], //Steel
+    [001, 001, 001, 001, 001, 001, 0.5, 002, 001, 001, 001, 0.5, 001, 001, 000, 0.5, 002, 001] //Fairy
 ];
 var textOnly = false;
 
 function Pokemon(arg){
-    var number = arg;
-    var type1 = 0;
-    var type2 = 0;
+	var number = arg;
+	var type1 = 0;
+	var type2 = 0;
 
-    this.changeType = function(slot, type){
-        if(slot == 1)
-            type1 = type;
-        if(slot == 2)
-            type2 = type;
-    }
+	this.changeType = function(slot, type){
+		if(slot == 1)
+			type1 = type;
+		if(slot == 2)
+			type2 = type;
+	}
 
-    this.updateTypes = function(){
-        type1 = document.getElementById("pokemon" + number + "type1").selectedIndex;
-        type2 = document.getElementById("pokemon" + number + "type2").selectedIndex;
-    }
+	this.updateTypes = function(){
+		type1 = document.getElementById("pokemon" + number + "type1").selectedIndex;
+		type2 = document.getElementById("pokemon" + number + "type2").selectedIndex;
+	}
 
-    this.calcWeakness = function(){
+	this.calcWeakness = function(){
         var result = [];
         for(i = 0; i<18; i++){
             if(chart[type1][i] * chart[type2][i] >= 2){
                 result[result.length] = i;
             }
         }
+        // document.getElementById("weakness" + number).innerHTML = "Weaknesses: " + result.formatOut();
         return result;
-    }
+	}
 
-    this.calcResist = function(){
-        var result = [];
+	this.calcResist = function(){
+		var result = [];
         for(i = 0; i<18; i++){
             if(chart[type1][i] * chart[type2][i] <= 0.5){
                 result[result.length] = i;
             }
         }
-        return result;
-    }
+        // document.getElementById("resistance" + number).innerHTML = "Resistances: " + result.formatOut();
+		return result;
+	}
 }
 
 function Team(){
@@ -108,43 +110,44 @@ function Team(){
 
     this.recommend = function(){
         var recs = [];
-        for(var i = 1; i<=typeNames.length; i++){ 
+        for(var i = 1; i<=typeNames.length; i++){ //consider type i
             var rating = 0;
             for(var j = 0; j<allWeaknesses.Spit().length; j++){
-                if(chart[i][allWeaknesses.Spit()[j]]<1){ 
+                if(chart[i][allWeaknesses.Spit()[j]]<1){ //if type i resists weakness j
                     rating++;
                 }
             }
-            for(var k = 0; k<typeNames.length; k++){ 
-                if(chart[i][k]>1){ 
-                    if(!allResistances.Spit().contains(k)) 
+            for(var k = 0; k<typeNames.length; k++){ //loop through the type chart for i
+                if(chart[i][k]>1){ //Find a weakness
+                    if(!allResistances.Spit().contains(k)) //If the weakness isn't resisted on the team
                         rating--;
                 }
             }
             recs[i-1] = rating;
         }
+        // console.log(recs);
 
         var result = [];
-        for(var z = 0; z<typeNames.length; z++){ 
+        for(var z = 0; z<typeNames.length; z++){ //runs through all types
             var best, highest;
-            for(var i = 0; i<recs.length; i++){ 
+            for(var i = 0; i<recs.length; i++){ //runs through recs to find a non-null value
                 if(recs[i]!=null){
-                    highest = recs[i]; 
+                    highest = recs[i]; //use that non-null as the high value to compare with below
                     best = i;
-                    break;
+                    break; //once you found one, stop looping
                 }
             }
             for(var j = 0; j<recs.length; j++){
-                if(recs[j]!=null){ 
-                    if(recs[j]>highest){ 
-                        highest = recs[j]; 
-                        best = j; 
+                if(recs[j]!=null){ //ignore the null ones
+                    if(recs[j]>highest){ //if its higher than the recorded highest
+                        highest = recs[j]; //its the new highest
+                        best = j; //and the best
                     }
                 }
             }
-            result[result.length] = best; 
+            result[result.length] = best; //the best index is used in reult
             if(recs[best]<-2) break;
-            recs[best] = null; 
+            recs[best] = null; //and that previous best value gets null'd
         }
 
         return result;
@@ -184,15 +187,18 @@ function Team(){
     }
 }
 
+//Buttons
+//*********************************************************************************************
+
 function calculateTeam(){
-    team = new Team();
+	team = new Team();
     var rows = document.getElementById("table").children[0].children;
     team.update();
-    for(var i=1; i<=6; i++){
-        rows[i].children[1].innerHTML = team.Spit()[i-1].calcWeakness().formatOut();
-        rows[i].children[2].innerHTML = team.Spit()[i-1].calcResist().formatOut();
-    }
-    document.getElementById("weaknesses").innerHTML = team.allWeaknesses().Spit().formatOut();
+	for(var i=1; i<=6; i++){
+		rows[i].children[1].innerHTML = team.Spit()[i-1].calcWeakness().formatOut();
+		rows[i].children[2].innerHTML = team.Spit()[i-1].calcResist().formatOut();
+	}
+	document.getElementById("weaknesses").innerHTML = team.allWeaknesses().Spit().formatOut();
     document.getElementById("resistances").innerHTML = team.allResistances().Spit().formatOut();
 
     if(textOnly){
@@ -205,7 +211,7 @@ function calculateTeam(){
         document.getElementById("unresisted").innerHTML = "Un-Resisted: "+ outstring.slice(0, outstring.length-2);
     }
     else{
-        document.getElementById("unresisted").innerHTML =  "Not Resisted: " + makeImages();
+        document.getElementById("unresisted").innerHTML =  "Un-Resisted: " + makeImages();
         var unResists = document.getElementById("unresisted").children;
         for(var i=0; i<18; i++){
             if(team.resisted().contains(i)){
@@ -229,14 +235,18 @@ function toggleText(){
     if(textOnly){
         textOnly = false;
         document.getElementById("text-toggle").className = "";
+        // document.getElementById("checkbox").src = "images/unchecked.png";
     }
     else{
         textOnly = true;
         document.getElementById("text-toggle").className = "pushed";
+        // document.getElementById("checkbox").src = "images/checked.png";
     }
     calculateTeam();
 }
 
+//Useful structures and properties
+//*********************************************************************************************
 function List(){
     var contents = [];
     this.Add = function(item){
@@ -244,12 +254,17 @@ function List(){
     }
     this.Remove = function(item){
         var result;
+
+        //Looks for the item
         for(var i = 0; i<contents.length; i++){
             if(contents[i]==item){
                 result = i;
+                //Shift all the values to fill the gap of the removed
                 for(var j = i; j<contents.length; j++){
                     contents[j] = contents [j+1];
                 }
+                
+                //Retains the length
                 var temp = [];
                 for(var q = 0; q<contents.length; q++){
                     if(typeof contents[q]!== 'undefined'){
@@ -257,6 +272,7 @@ function List(){
                     }
                 }
                 contents = temp;
+
                 break;
             }
         }
@@ -265,6 +281,13 @@ function List(){
     this.Spit = function(){
         return contents;
     }
+}
+
+function makeOptions(){ //I used this to make the first dropdown list
+	list = "<option value=\"0\">None</option>\n";
+	for(i = 0; i<18; i++)
+		list+="<option value=\""+ (i+1) + "\">"+ typeNames[i] +"</option>\n";
+	console.log(list);
 }
 
 function makeImages(){
@@ -283,11 +306,11 @@ Object.defineProperty(String.prototype, "capitalize", {
 
 Object.defineProperty(Array.prototype, "contains", {
     value: function contains(item) {
-        var counter = 0;
+    	var counter = 0;
         while(this[counter]!=null){
-            if(this[counter] == item)
-                return true;
-            counter++;
+        	if(this[counter] == item)
+        		return true;
+        	counter++;
         }
         return false;
     }
@@ -354,7 +377,7 @@ Object.defineProperty(Array.prototype, "convertToImages", {
         };
         return result;
     }
-
+})
     /*testing
 let a = 10;
 let b = 20;
