@@ -38,8 +38,8 @@ body {
 
 #main {
   background: url(images/cover.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size:contain;
+  background-repeat:round;
   padding: 10px 20px 0;
 }
 
@@ -61,7 +61,7 @@ table tr:nth-child(odd) td {
 td {
   padding: 10px;
   width: 300px;
-  height: 60px;
+  height: 46px;
   justify-content: center;
   align-items: center;
   text-align: center;
