@@ -14,7 +14,7 @@ Reccomendation: It will also tell you about the reccomendate type additions you 
 
 ## How to Use It
 
-Enter Types: Type in the types of the Pokémon that are battling.
+Enter Types: Enter the types of the pokemon of your team.
 
 See the Results: The calculator will show you which types are strong against the other and which ones are weak.
 
